@@ -5,8 +5,10 @@ from img import process_images
 @click.option('--input', '-i')
 @click.option('--output', '-o')
 @click.option('--style', '-s')
-def main(input, output, style):
-    process_images(input, output, style)
+@click.option('--author', '-a')
+@click.option('--quality', '-q')
+def main(input, output, style, author, quality):
+    process_images(input, output, style, author, quality)
 
 
 if __name__ == "__main__":

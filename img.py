@@ -9,12 +9,12 @@ PATH = "./prev/" #需要拼接的图片所在的路径
 
 PIL.Image.MAX_IMAGE_PIXELS = 93312000000000
 
-def process_images(path, out_path, style):
+def process_images(path, out_path, style, author, quality):
     image_names = get_image_names(path)
     for image_name in image_names:
         if image_name != ".DS_Store":
             image = Image.open(path + image_name)
-            create_white(image, image_name, out_path, style)
+            create_white(image, image_name, out_path, style, author, quality)
             print(image_name,"Finish!")
 
 

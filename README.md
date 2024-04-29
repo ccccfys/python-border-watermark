@@ -7,7 +7,12 @@
 # -i input folder
 # -o output folder
 # -s style type
-python3 cli.py -i prev/ -o after/ -s 1
+# -a author name
+# -q quality 100为原图，不输入默认100
+python3 cli.py -i prev/ -o after/ -s 1 -q 80
+python3 cli.py -i prev/ -o after/ -s 2 -q 80
+python3 cli.py -i prev/ -o after/ -s 3 -q 80
+python3 cli.py -i prev/ -o after/ -s 4 -a ShiliChan -q 80
 ```
 
 ## Know Issues
@@ -16,9 +21,11 @@ python3 cli.py -i prev/ -o after/ -s 1
 	- 支持Pillow10以上的版本
 	- 支持Sony、Canon、大疆、iphone相机的照片边框水印添加
 	- 调整了水印样式
-	- 增加了Style1、2、3两种边框风格，可供使用者选择
+	- 增加了Style1、2、3、4,共4种边框风格，可供使用者选择.
+	- Style4支持输入创作者名称（仅英文）
 	- 针对索尼A7C2设备，显示的设备名称从ILCE-7CM2改为Alpha 7C II
 	- 针对大疆Pocket3设备，显示的设备名称从PP-101改为Pocket 3
+	- 支持自定义输出图片的质量，100为原图，数字小于100进行压缩
 
 
 ## Example
@@ -33,6 +40,9 @@ python3 cli.py -i prev/ -o after/ -s 1
 
 ### After process Sony Style3
 ![](./example/after/DSC00307_3.JPG)
+
+### After process Sony Style4
+![](./example/after/DSC00307_4.JPG)
 
 ### After process Canon Style1
 ![](./example/after/IMG_1494.JPG)
