@@ -33,23 +33,44 @@ python3 cli.py -i prev/ -o after/ -s 4 -a ShiliChan -q 80
 ![](./example/prev/DSC00307.JPG)
 
 ### After process Sony Style1
+```python
+python3 cli.py -i prev/ -o after/ -s 1 -q 80
+```
 ![](./example/after/DSC00307_1.JPG)
 
 ### After process Sony Style2
+```python
+python3 cli.py -i prev/ -o after/ -s 2 -q 80
+```
 ![](./example/after/DSC00307_2.JPG)
 
 ### After process Sony Style3
+```python
+python3 cli.py -i prev/ -o after/ -s 3 -q 80
+```
 ![](./example/after/DSC00307_3.JPG)
 
 ### After process Sony Style4
+```python
+python3 cli.py -i prev/ -o after/ -s 4 -a ShiliChan -q 80
+```
 ![](./example/after/DSC00307_4.JPG)
 
 ### After process Canon Style1
+```python
+python3 cli.py -i prev/ -o after/ -s 1 -q 80
+```
 ![](./example/after/IMG_1494.JPG)
 
 ### After process Apple Style1
+```python
+python3 cli.py -i prev/ -o after/ -s 1 -q 80
+```
 ![](./example/after/IMG_4759.JPG)
 
 ### After process Dji Style1
+```python
+python3 cli.py -i prev/ -o after/ -s 1 -q 80
+```
 ![](./example/after/dji_mimo_20240316_165244_20240316165243_1710600947481_photo.JPG)
 
