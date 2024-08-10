@@ -25,6 +25,10 @@ def create_white(im, name, output_path, style, author, quality):
         logo = Image.open('./logo/sony.png').convert("RGBA")
     elif exif.get('Make') == 'Canon':
         logo = Image.open('./logo/canon.png').convert("RGBA")
+    elif exif.get('Make') == 'NIKON CORPORATION':
+        logo = Image.open('./logo/nikon.png').convert("RGBA")
+    elif exif.get('Make') == 'Panasonic':
+        logo = Image.open('./logo/panasonic.png').convert("RGBA")
     elif exif.get('Make') == 'DJI':
         logo = Image.open('./logo/dji.jpeg').convert("RGBA")
     elif exif.get('Make') == 'Apple':
