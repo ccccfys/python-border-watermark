@@ -31,6 +31,12 @@ def create_white(im, name, output_path, style, author, quality):
         logo = Image.open('./logo/panasonic.png').convert("RGBA")
     elif exif.get('Make') == 'DJI':
         logo = Image.open('./logo/dji.jpeg').convert("RGBA")
+    elif exif.get('Make') == 'FUJIFILM':
+        logo = Image.open('./logo/Fujifilm.png').convert("RGBA")        
+    elif exif.get('Make') == 'Hasselblad':
+        logo = Image.open('./logo/Hasselblad.png').convert("RGBA")  
+    elif exif.get('Make') == 'LEICA CAMERA AG':
+        logo = Image.open('./logo/Leica.png').convert("RGBA")                 
     elif exif.get('Make') == 'Apple':
         logo = Image.open('./logo/apple.png').convert("RGBA")
     im = ImageOps.exif_transpose(im)
