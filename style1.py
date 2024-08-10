@@ -4,9 +4,9 @@ from devicename import device_name
 import PIL
 import os
 
-fontPath = "/System/Library/Fonts/"
-bold_font = os.path.join(fontPath, "Supplemental/Arial Bold.ttf")
-regular_font = os.path.join(fontPath, "Supplemental/Arial.ttf")
+fontPath = "C:/Windows/Fonts"
+bold_font = os.path.join(fontPath, "Comic Sans MS/comicbd.ttf")
+regular_font = os.path.join(fontPath, "Comic Sans MS/comicbd.ttf")
 # Supplemental/
 scale = 10
 benchmark_bold_font_size = 20
