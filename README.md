@@ -1,7 +1,23 @@
-# image-metadata-watermark
+# Python边框水印使用教程
 
 
-## Usage
+#### 1. 在 <a href="https://www.python.org/" title="Python官网">Python官网</a> 下载并安装Python
+ 
+#### 2. 安装pillow和click包
+```python
+pip install pillow
+pip install click
+```
+
+#### 3. 下载项目代码：  <a href="https://github.com/ccccfys/python-border-watermark" title="Python边框水印">Python边框水印</a> 
+#### 4. 设置Windows系统字体：原项目代码在非Windows系统上测试，Windows系统上需要修正字体路径。字体路径为：
+
+```
+C:/Windows/Fonts
+```
+#### 5. 添加新的相机logo：原项目代码仅支持佳能、索尼、苹果和大疆设备，可以自己添加其它支持的品牌。在logo文件夹中放入相机品牌logo图片，并在watermark.py中按照已有格式添加相应的代码。
+
+#### 6. 在本地打开项目，运行代码即可对图片进行批量处理
 
 ```python
 # -i input folder
@@ -16,61 +32,4 @@ python3 cli.py -i prev/ -o after/ -s 4 -a ShiliChan -q 80
 ```
 
 ## Know Issues
-- 基于https://github.com/lovemegowin/image-metadata-watermark 进行开发
-- 在作者原代码的基础上做出的改动包括但不限于：
-	- 支持Pillow10以上的版本
-	- 支持Sony、Canon、大疆、iphone相机的照片边框水印添加
-	- 调整了水印样式
-	- 增加了Style1、2、3、4,共4种边框风格，可供使用者选择.
-	- Style4支持输入创作者名称（仅英文）
-	- 针对索尼A7C2设备，显示的设备名称从ILCE-7CM2改为Alpha 7C II
-	- 针对大疆Pocket3设备，显示的设备名称从PP-101改为Pocket 3
-	- 支持自定义输出图片的质量，100为原图，数字小于100进行压缩
-
-
-## Example
-### Before process Sony
-![](./example/prev/DSC00307.JPG)
-
-### After process Sony Style1
-```python
-python3 cli.py -i prev/ -o after/ -s 1 -q 80
-```
-![](./example/after/DSC00307_1.JPG)
-
-### After process Sony Style2
-```python
-python3 cli.py -i prev/ -o after/ -s 2 -q 80
-```
-![](./example/after/DSC00307_2.JPG)
-
-### After process Sony Style3
-```python
-python3 cli.py -i prev/ -o after/ -s 3 -q 80
-```
-![](./example/after/DSC00307_3.JPG)
-
-### After process Sony Style4
-```python
-python3 cli.py -i prev/ -o after/ -s 4 -a ShiliChan -q 80
-```
-![](./example/after/DSC00307_4.JPG)
-
-### After process Canon Style1
-```python
-python3 cli.py -i prev/ -o after/ -s 1 -q 80
-```
-![](./example/after/IMG_1494.JPG)
-
-### After process Apple Style1
-```python
-python3 cli.py -i prev/ -o after/ -s 1 -q 80
-```
-![](./example/after/IMG_4759.JPG)
-
-### After process Dji Style1
-```python
-python3 cli.py -i prev/ -o after/ -s 1 -q 80
-```
-![](./example/after/dji_mimo_20240316_165244_20240316165243_1710600947481_photo.JPG)
-
+- 在https://github.com/loannechan/image-metadata-watermark基础上进行了细微代码修改，以适应Windows系统
