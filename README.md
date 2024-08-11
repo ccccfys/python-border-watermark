@@ -8,8 +8,8 @@
  
 #### 2. 安装pillow和click包
 ```python
-pip install pillow
-pip install click
+pip install pillow -i  http://mirrors.aliyun.com/pypi/simple/
+pip install click -i  http://mirrors.aliyun.com/pypi/simple/
 ```
 
 #### 3. 下载项目代码：  <a href="https://github.com/ccccfys/python-border-watermark" title="Python边框水印">Python边框水印</a> 
