@@ -1,6 +1,9 @@
 # Python边框水印使用教程
 
 
+![效果展示](https://github.com/ccccfys/python-border-watermark/blob/main/after/%E5%93%88%E8%8B%8F%E8%A3%81%E5%88%87.jpg)
+
+
 #### 1. 在 <a href="https://www.python.org/" title="Python官网">Python官网</a> 下载并安装Python
  
 #### 2. 安装pillow和click包
